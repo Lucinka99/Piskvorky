@@ -1,0 +1,79 @@
+/*Aplikuje reset css vlastností*/
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	
+}
+/*Nastavení pro křížky a pro pole, která vyhrála*/
+:root{
+	--green: #77DD77;
+	--winning-blocks: #0b7c22;
+}
+
+body{
+	color: #77DD77;
+	Font-family: 'Shrikhand', cursive;	
+	
+}
+h1{
+	font-size:54px;
+	text-transform: uppercase;
+	
+}
+.container{
+	padding:40px;
+	height:100vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: linear-gradient(0deg, rgba(106,106,106,1) 0%, rgba(61,65,65,1) 100%);
+	
+}
+/*specifikace herního pole*/
+#gameboard {
+	width:450px;
+	display:flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+	
+}
+/*specifikace jednotlivých polí herního pole*/
+.box{
+	height:150px;
+	width:150px;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	color: #77DD77;
+	font-size: 120px;
+	border-right: 2px solid;
+	border-bottom: 2px solid;
+	
+	
+}
+/*Vymazání pravé a spodní lišty*/
+.box:nth-child(3n){
+	border-right:none;
+}
+.box:nth-child(6) ~ .box{
+	border-bottom:none;
+	
+}
+/*specifikace vzhledu tlačítka*/
+button{
+	padding: 10px 20px;
+	border-radius: 10px;
+	background-color:#77DD77;
+	color: #333;
+	border-color: #77DD77;
+	font-size: 18px;
+	font-family: 'Rubik', sans-serif;
+}
+/*akce při najetí kurzorem na tlačítko*/
+button:hover{
+	cursor: pointer;
+	background-color:#0b7c22;
+	color:#77DD77;
+}

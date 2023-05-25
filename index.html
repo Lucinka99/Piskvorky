@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Piškvorky</title>
+	<meta charset="UTF-8">
+	<!-- Připnutí CSS souboru -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Fonty z Google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&family=Shrikhand&display=swap" rel="stylesheet">
+	<!-- ikona okna v browseru -->
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+	<div class="container">
+		<!-- Název hry -->
+		<h1 id="playerText">Piškvorky</h1>
+		<!-- Tlačítko pro restart -->
+		<button id="restartBtn">Začít znovu</button>
+		<!-- Herní pole -->
+		<div id="gameboard">
+			<!-- Jednotlivá políčka -->
+			<div class="box" id="0"></div>
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>
+            <div class="box" id="3"></div>
+            <div class="box" id="4"></div>
+            <div class="box" id="5"></div>
+            <div class="box" id="6"></div>
+            <div class="box" id="7"></div>
+            <div class="box" id="8"></div>
+		</div>
+	</div>
+	<!-- Připnutí javascript souboru -->
+	<script src="game.js"></script>
+</body>
+</html>
